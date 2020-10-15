@@ -17,31 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-6I-Xzv">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-6I-Xzv">
                                 <rect key="frame" x="128" y="105" width="158" height="591"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ujz-UC-fmM">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ujz-UC-fmM">
                                         <rect key="frame" x="0.0" y="0.0" width="158" height="150"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="158" id="0fb-v4-07z"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoV-o3-yuR">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoV-o3-yuR">
                                         <rect key="frame" x="0.0" y="187" width="158" height="150"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="158" id="cRt-XB-a6f"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tym-Vo-vMA">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tym-Vo-vMA">
                                         <rect key="frame" x="0.0" y="374" width="158" height="150"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="158" id="HmE-2S-qes"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-q6-2dY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-q6-2dY">
                                         <rect key="frame" x="0.0" y="561" width="158" height="30"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <state key="normal" title="Start">
@@ -53,13 +53,16 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Tym-Vo-vMA" firstAttribute="top" secondItem="eqE-6I-Xzv" secondAttribute="top" constant="374" id="cIf-Zm-ksS"/>
                                     <constraint firstAttribute="width" constant="158" id="oxf-m8-O4e"/>
+                                    <constraint firstItem="aoV-o3-yuR" firstAttribute="top" secondItem="eqE-6I-Xzv" secondAttribute="top" constant="187" id="zfY-gd-mXE"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
+                            <constraint firstItem="eqE-6I-Xzv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="Cxt-4U-h9g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eqE-6I-Xzv" secondAttribute="bottom" constant="40" id="dYi-0z-BcK"/>
                             <constraint firstItem="eqE-6I-Xzv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1h-mI-9u1"/>
                         </constraints>
